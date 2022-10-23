@@ -1,4 +1,3 @@
-from genericpath import exists
 from getpass import getpass
 from os import path, system, walk
 from random import sample

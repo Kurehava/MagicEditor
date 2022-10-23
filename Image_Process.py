@@ -98,7 +98,7 @@ def entry(NAVI, config):
                 # 如果指定EXT为JPG或PNG直接转就行
                 # 不是以上两种格式的话，先转成以上两种格式
                 # 再转成其他的格式
-                if not MCT_Tranform.PDF2Image(fp, EXT, config):
+                if not MCT_Transform.PDF2Image(fp, EXT, config):
                     error_list.append(fp[0])
                     false_count += 1
                     print(f'{ERROR_P}: NAVI - 1\n'
@@ -112,7 +112,7 @@ def entry(NAVI, config):
                 else:
                     output_list.append([fp[0], True])
             else:
-                if not MCT_Tranform.Image2Image(fp, ext=EXT):
+                if not MCT_Transform.Image2Image(fp, ext=EXT):
                     error_list.append(fp[0])
                     false_count += 1
                     print(f'{ERROR_P}: change2image\n'
@@ -125,7 +125,7 @@ def entry(NAVI, config):
                     output_list.append([fp[0], True])
         elif NAVI == 2:
             if fp_ext in {'SVG', 'svg'}:
-                if not MCT_Tranform.SVG2image(fp, ext=EXT):
+                if not MCT_Transform.SVG2image(fp, ext=EXT):
                     error_list.append(fp[0])
                     false_count += 1
                     print(f'{ERROR_P}: change2image\n'
@@ -137,7 +137,7 @@ def entry(NAVI, config):
                 else:
                     output_list.append([fp[0], True])
             else:
-                if not MCT_Tranform.Image2SVG(fp):
+                if not MCT_Transform.Image2SVG(fp):
                     error_list.append(fp[0])
                     false_count += 1
                     print(f'{ERROR_P}: change2image\n'
@@ -150,7 +150,7 @@ def entry(NAVI, config):
                     output_list.append([fp[0], True])
         elif NAVI == 3:
             if fp_ext in {'PDF', 'pdf'}:
-                if not MCT_Tranform.PDF2Image(fp, EXT, config):
+                if not MCT_Transform.PDF2Image(fp, EXT, config):
                     error_list.append(fp[0])
                     false_count += 1
                     print(f'{ERROR_P}: NAVI - 3\n'
@@ -164,7 +164,7 @@ def entry(NAVI, config):
                 else:
                     output_list.append([fp[0], True])
             else:
-                if not MCT_Tranform.Image2Image(fp, ext='PDF'):
+                if not MCT_Transform.Image2Image(fp, ext='PDF'):
                     error_list.append(fp[0])
                     false_count += 1
                     print(f'{ERROR_P}: change2image\n'
