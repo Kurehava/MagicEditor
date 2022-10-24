@@ -29,9 +29,27 @@ def NAVIGATION(NI):
         PDF_Secure_Process.entry()"""
 
 
+def MCTHelp():
+    content = "帮助：\n" \
+              "1.只需要按照屏幕上显示的操作就好了，选项是数字就输入数字，是英文就输入英文。\n" \
+              "2.源码全平台共通，打包脚本在 create_app 目录下，linux需要直接使用源码" \
+              "3.直接使用源码的情况下，请直接执行入口文件mian.py\n" \
+              "4.为了安全起见，本脚本不会自动进行版本更新，可以在以下的URl获取到最新的源码。\n" \
+              "https://github.com/Kurehava/IMG-PDF-Conversion-Merger-Tool\n"
+    system(CLEAR)
+    print(content)
+    input("输入回车返回主菜单")
+
+
 def main_menu():
     try:
-        NAVI_INDEX = MCT_Tools.input_checker(config, MENU, 'int', {'1', '2', '3', '4', '5'}, re_rule=r'[1-5]')
+        while True:
+            NAVI_INDEX = MCT_Tools.input_checker(config, MENU, 'int', {'0', '1', '2', '3', '4', '5'}, re_rule=r'[0-5]')
+            if NAVI_INDEX == 0:
+                MCTHelp()
+                continue
+            else:
+                break
         NAVIGATION(NAVI_INDEX)
     except KeyboardInterrupt:
         if OS_TYPE in {"Windows", "Linux"}:
@@ -85,16 +103,16 @@ if __name__ == '__main__':
              f"|_|  |_|\\___|_|  \\__, |\\___|_|   \n" \
              f"                  |___/       "
 
-    conversion = "  ____                              _              \n"\
-                 " / ___|___  _ ____   _____ _ __ ___(_) ___  _ __   \n"\
-                 "| |   / _ \\| '_ \\ \\ / / _ \\ '__/ __| |/ _ \\| '_ \\ \n"\
-                 "| |__| (_) | | | \\ V /  __/ |  \\__ \\ | (_) | | | |\n"\
+    conversion = "  ____                              _              \n" \
+                 " / ___|___  _ ____   _____ _ __ ___(_) ___  _ __   \n" \
+                 "| |   / _ \\| '_ \\ \\ / / _ \\ '__/ __| |/ _ \\| '_ \\ \n" \
+                 "| |__| (_) | | | \\ V /  __/ |  \\__ \\ | (_) | | | |\n" \
                  " \\____\\___/|_| |_|\\_/ \\___|_|  |___/_|\\___/|_| |_| \n"
 
-    tools = " _____           _ \n"\
-            "|_   _|__   ___ | |\n"\
-            "  | |/ _ \\ / _ \\| |\n"\
-            "  | | (_) | (_) | |\n"\
+    tools = " _____           _ \n" \
+            "|_   _|__   ___ | |\n" \
+            "  | |/ _ \\ / _ \\| |\n" \
+            "  | | (_) | (_) | |\n" \
             "  |_|\\___/ \\___/|_|"
 
     print(f'\033[96m{merger}\033[0m')
@@ -158,6 +176,8 @@ if __name__ == '__main__':
            '      |-纯PDF合并\n' \
            '      |-图片+PDF合并\n' \
            '      |-多页数文件部分合并\n' \
+           '\033[96m<>-帮助\033[0m\n' \
+           '   | 0-帮助\n' \
            '\033[96m<>-退出\033[0m\n' \
            '   | Ctrl + C\n' \
            '===========================\n' \
