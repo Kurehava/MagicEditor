@@ -106,7 +106,7 @@ if __name__ == '__main__':
     # FORMAT LIST
     PIL_FORMAT_LIST = ['BMP', 'DIB', 'EPS', 'GIF', 'ICNS', 'ICO', 'IM', 'JPEG',
                        'MSP', 'PCX', 'PNG', 'PPM', 'SGI', 'TGA', 'TIFF', 'WEBP',
-                       'XMB', 'PDF', 'JPG', 'JPEG2000', 'SPIDER']
+                       'XMB', 'PDF', 'JPG', 'JPEG2000', 'SPIDER', 'AVIF']
 
     # GLOBAL Var
     EXT = 'png'

@@ -3,6 +3,7 @@ from os import path, makedirs, remove
 
 import fitz
 import svgwrite
+import pillow_avif
 from PIL import Image, UnidentifiedImageError
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from reportlab.graphics import renderPM
