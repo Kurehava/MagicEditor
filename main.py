@@ -31,10 +31,19 @@ def NAVIGATION(NI):
 
 def MCTHelp():
     content = "帮助：\n" \
-              "1.只需要按照屏幕上显示的操作就好了，选项是数字就输入数字，是英文就输入英文。\n" \
-              "2.源码全平台共通，打包脚本在 create_app 目录下，linux需要直接使用源码" \
-              "3.直接使用源码的情况下，请直接执行入口文件mian.py\n" \
-              "4.为了安全起见，本脚本不会自动进行版本更新，可以在以下的URl获取到最新的源码。\n" \
+              "1.只需要按照屏幕上显示的操作就好了\n" \
+              "  选项是数字就输入数字\n" \
+              "  是英文就输入英文。\n\n" \
+              "2.源码全平台共通\n" \
+              "  打包脚本在 create_app 目录下\n" \
+              "  linux需要直接使用源码\n\n" \
+              "3.直接使用源码的情况下\n" \
+              "  请直接执行入口文件 mian.py.\n" \
+              "  直接使用源码之前，请安装python依赖\n" \
+              "  python3.x -m pip install -r requirements.txt\n\n" \
+              "4.为了安全起见\n" \
+              "  本脚本不会自动进行版本更新\n" \
+              "  可以在以下的URl获取到最新的源码。\n\n" \
               "https://github.com/Kurehava/IMG-PDF-Conversion-Merger-Tool\n"
     system(CLEAR)
     print(content)
