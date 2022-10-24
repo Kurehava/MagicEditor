@@ -2,6 +2,7 @@ from os import system
 from sys import exit
 from platform import system as psystem
 from time import sleep
+from subprocess import Popen, PIPE
 
 import Image_Process
 import MCT_Tools
@@ -65,7 +66,12 @@ def main_menu():
             system(CLEAR)
             exit(0)
         elif OS_TYPE == "Darwin":
-            system("osascript -e 'tell application \"Terminal\" to close first window' & exit")
+            # iTerm 无法用macos terminal退出命令正常退出
+            if str(Popen("echo $TERM_PROGRAM", stdout=PIPE, shell=True).communicate()[0])[2:-3] != "Apple_Terminal":
+                system(CLEAR)
+                exit(0)
+            else:
+                system("osascript -e 'tell application \"Terminal\" to close first window' & exit")
 
 
 if __name__ == '__main__':
