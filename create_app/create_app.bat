@@ -1,4 +1,5 @@
 cd %~dp0
+if not exist "..\app\" (mkdir ..\app\)
 pyinstaller -F ../main.py -p ../MCT_Tools.py -p ../MCT_Transform.py -p ../PDF_Merge_Process.py -p ../Image_Process.py -i ../MCT.ico
 rename dist\* MCT.exe
 move dist\* .
