@@ -294,8 +294,8 @@ def multi_pdf_process(merger_path_list, multi_pdf_flag, encrypted_file_pw, confi
                     reader.decrypt(passwd)
                 for range_num in page_range_list:
                     if "-" in range_num:
-                        first_index = int(range_num.split("-")[0])
-                        second_index = int(range_num.split("-")[1])
+                        first_index = int(range_num.split("-")[0]) - 1
+                        second_index = int(range_num.split("-")[1]) - 1
                         if first_index > second_index:
                             pages_list = [pgs for pgs in range(first_index, second_index - 1, -1)]
                         else:
