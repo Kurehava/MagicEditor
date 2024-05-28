@@ -4,11 +4,11 @@ from platform import system as psystem
 from time import sleep
 from subprocess import Popen, PIPE
 
-import Image_Process
-import MCT_Tools
-import PDF_Merge_Process
-import PDF_Secure_Process
-import PDF_Tools_Process
+import src.Image_Process as Image_Process
+import src.MCT_Tools as MCT_Tools
+import src.PDF_Merge_Process as PDF_Merge_Process
+import src.PDF_Secure_Process as PDF_Secure_Process
+import src.PDF_Tools_Process as PDF_Tools_Process
 
 
 def NAVIGATION(NI):

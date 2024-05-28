@@ -9,8 +9,8 @@ from PyPDF2 import PdfFileReader, PdfFileWriter
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
 
-from MCT_Tools import LibraryPathSplit as Lps
-from MCT_Tools import decrypt_pdf
+from src.MCT_Tools import LibraryPathSplit as Lps
+from src.MCT_Tools import decrypt_pdf
 
 ERROR_P = '[\033[091mERROR\033[0m]'
 WARN__P = '[\033[093mWARN-\033[0m]'

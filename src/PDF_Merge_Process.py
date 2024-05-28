@@ -5,11 +5,11 @@ from time import sleep
 
 from PyPDF2 import PdfFileMerger, PdfFileReader, PdfFileWriter
 
-from MCT_Tools import LibraryPathSplit as Lps
-from MCT_Tools import input_checker, decrypt_pdf
-from MCT_Tools import input_data_clean as idc
-from MCT_Transform import Image2Image
-from MCT_Transform import image_checker as mtic
+from src.MCT_Tools import LibraryPathSplit as Lps
+from src.MCT_Tools import input_checker, decrypt_pdf
+from src.MCT_Tools import input_data_clean as idc
+from src.MCT_Transform import Image2Image
+from src.MCT_Transform import image_checker as mtic
 
 # pip install PyCryptodome
 # 必须要这个import, 可以不用，但是要有

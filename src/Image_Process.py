@@ -3,12 +3,12 @@ from os import system, makedirs
 from os.path import exists
 from time import sleep
 
-import MCT_Transform
-from MCT_Tools import LibraryPathSplit as Lps
-from MCT_Tools import folder_file_statistic as ffs
-from MCT_Tools import input_checker as mtic
-from MCT_Tools import multiple_file_split as mfs
-from MCT_Tools import input_data_clean as idc
+import src.MCT_Transform as MCT_Transform
+from src.MCT_Tools import LibraryPathSplit as Lps
+from src.MCT_Tools import folder_file_statistic as ffs
+from src.MCT_Tools import input_checker as mtic
+from src.MCT_Tools import multiple_file_split as mfs
+from src.MCT_Tools import input_data_clean as idc
 
 ERROR_P = '[\033[091mERROR\033[0m]'
 WARN__P = '[\033[093mWARN-\033[0m]'

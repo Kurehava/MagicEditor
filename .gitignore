@@ -1,1 +1,3 @@
-app/
+app/app/
+test/
+src/__pycache__/

@@ -15,11 +15,11 @@ from PyPDF2 import PdfFileMerger, PdfFileReader, PdfFileWriter
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
 
-from MCT_Tools import input_data_clean as idc
-from MCT_Tools import multiple_file_split as mfs
-from MCT_Tools import input_checker as ic
-from MCT_Tools import LibraryPathSplit as Lps
-from MCT_Tools import decrypt_pdf
+from src.MCT_Tools import input_data_clean as idc
+from src.MCT_Tools import multiple_file_split as mfs
+from src.MCT_Tools import input_checker as ic
+from src.MCT_Tools import LibraryPathSplit as Lps
+from src.MCT_Tools import decrypt_pdf
 
 ERROR_P = '[\033[091mERROR\033[0m]'
 WARN__P = '[\033[093mWARN-\033[0m]'
