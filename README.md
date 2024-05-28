@@ -1,2 +1,7 @@
-# IMG-PDF-Conversion-Merger-Tool
-A safe and easy-to-use local image conversion, PDF conversion and merging tool
+# MagicEditor
+Format conversion and merge tool for images and PDF files locally
+
+## feature
+* Safety
+* Easy to use
+* Extensible
