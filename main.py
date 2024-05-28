@@ -44,8 +44,8 @@ def MCTHelp():
               "  python3.x -m pip install -r requirements.txt\n\n" \
               "4.为了安全起见\n" \
               "  本脚本不会自动进行版本更新\n" \
-              "  可以在以下的URl获取到最新的源码。\n\n" \
-              "https://github.com/Kurehava/IMG-PDF-Conversion-Merger-Tool\n"
+              "  可以在以下的URL获取到最新的源码。\n\n" \
+              "https://github.com/Kurehava/MagicEditor\n"
     system(CLEAR)
     print(content)
     input("输入回车返回主菜单")
@@ -159,6 +159,7 @@ if __name__ == '__main__':
 
     # 菜单选项
     # TODO: 进度- 1，2，3，4 完成 5，6 未完成
+    # TODO: 多ページ合併はみかんせい
     """MENU = f'{title_p}\n{auther_}\n' \
            f'图片PDF操作统合工具 {VERSION}\n' \
            '===========================\n' \
@@ -168,6 +169,7 @@ if __name__ == '__main__':
            '   | 3-图片<->PDF  互转\n' \
            '\033[96m<>-PDF编辑\033[0m\n' \
            '   | 4-PDF合并\n' \
+           '      |-多ページ合併\n'\
            '      |-纯PDF合并\n' \
            '      |-图片+PDF合并\n' \
            '      |-多页数文件部分合并\n' \
